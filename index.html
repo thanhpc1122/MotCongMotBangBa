@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .borders{
+            text-align: center; /* Căn giữa theo chiều ngang */
+            margin-left: 13em;
+            border: 1px solid black; /* Viền bao quanh */
+            padding: 20px; /* Khoảng cách giữa viền và nội dung */
+            display: inline-block; /* Để nội dung không chiếm toàn bộ chiều rộng */
+            border-radius: 1em;
+        }
+
+        .aligns{
+            margin-left: 3em;
+        }
+
+        /* Hiệu ứng hover cho button */
+        #clicks:hover {
+            background-color: #d608ff;
+            color: #44ff33;
+        }
+
+        #clicks {
+            background-color: #333333;
+            color: #00ff00;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer; /* Đổi con trỏ chuột thành dạng tay khi hover */
+            transition: all 1s ease; /* Thêm hiệu ứng mượt mà khi thay đổi */
+        }
+    </style>
+</head>
+<body>
+    <h1>test chỉ số thông minh của ...</h1><hr>
+    <p><b>cho phép tính sau : và chọn đáp án đúng </b></p> <br>
+
+    <div class="borders">1 + 1 = ?</div> <br>
+    <span id="cl" style="text-align: center;">chọn đáp án đúng</span>
+
+    <form class="aligns">
+        <label for="radio1" class="aligns">1</label>
+        <input id="radio1" type="radio" name="title" value="1" class="aligns">
+
+        <label for="radio2" class="aligns">2</label>
+        <input id="radio2" type="radio" name="title" value="2" class="aligns">
+
+        <label for="radio3" class="aligns">3</label>
+        <input id="radio3" type="radio" name="title" value="3" class="aligns">
+
+        <label for="radio4" class="aligns">4</label>
+        <input id="radio4" type="radio" name="title" value="4" class="aligns">
+    </form>
+
+
+    <br>
+    <button id="clicks"><b>gửi </b></button>
+    <p id="dan"><b><i>:)</i></b></p>
+
+    <script src ="js.js"></script>
+</body>
+</html>
